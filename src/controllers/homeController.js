@@ -15,8 +15,8 @@ const homePostMethod = async (req, res)=>{
         password: hashedPassword
     })
     user.save()
-        .then(result => res.send(result))
         .catch(err => console.log(err))
+    res.render('login')
 }
 
 module.exports = {
