@@ -1,6 +1,6 @@
 const User = require('../models/users');
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 
 const homeGetMethod = (req,res)=>{
